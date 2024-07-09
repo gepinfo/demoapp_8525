@@ -11,7 +11,7 @@ import {
     CamundaController,
     systemcredentialmanagerController,
     UserController,
-    testController
+    testsController
     } from './apicontroller';
 
 const PORT = 8000
@@ -23,7 +23,7 @@ let apisController = [
     new CamundaController(),
     new systemcredentialmanagerController(),
     new UserController(),
-    new testController()
+    new testsController()
     ]
 class App {
 

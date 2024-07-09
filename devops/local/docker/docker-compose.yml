@@ -170,7 +170,7 @@ services:
       - securitymanager
       - systemcredentialmanager
       - systementry
-      - testfeature
+      - testfeatures
 
     networks:
       - demoapp_8525_net
@@ -251,7 +251,7 @@ services:
     image: systementry-8525
     container_name: systementry-8525
     ports: 
-      - 8012:8012
+      - 8014:8014
     env_file: .env
     depends_on:
       - mongo
@@ -267,12 +267,12 @@ services:
     mem_reservation: 150m
     cpus: 0.2
 
-  testfeature: 
-    build: ../../../application/services/custom_services/testfeature
-    image: testfeature-8525
-    container_name: testfeature-8525
+  testfeatures: 
+    build: ../../../application/services/custom_services/testfeatures
+    image: testfeatures-8525
+    container_name: testfeatures-8525
     ports: 
-      - 8013:8013
+      - 8015:8015
     env_file: .env
     depends_on:
       - mongo

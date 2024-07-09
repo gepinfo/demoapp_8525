@@ -54,14 +54,14 @@ service:
   systementry: 
     name: systementry
     type: NodePort
-    port: 8012
-    targetPort: 8012
+    port: 8014
+    targetPort: 8014
 
-  testfeature: 
-    name: testfeature
+  testfeatures: 
+    name: testfeatures
     type: NodePort
-    port: 8013
-    targetPort: 8013
+    port: 8015
+    targetPort: 8015
 
 
 deployment:
@@ -92,9 +92,9 @@ deployment:
     name: systementry
     image: geppettotest/demoapp-systementry:1.0
 
-  testfeature: 
-    name: testfeature
-    image: geppettotest/demoapp-testfeature:1.0
+  testfeatures: 
+    name: testfeatures
+    image: geppettotest/demoapp-testfeatures:1.0
 
   camundapod:
      name: camundapod

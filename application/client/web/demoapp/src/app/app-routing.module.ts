@@ -32,7 +32,7 @@ const routes: Routes = [
        { path: '', component: TemplateComponent, pathMatch: 'full'   } ,
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
-{ path : '', loadChildren: () => import('.//.module').then(m => m.Module), canActivate: [AuthGuard] } , 
+{ path : 'tests', loadChildren: () => import('./tests/tests.module').then(m => m.TestsModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({

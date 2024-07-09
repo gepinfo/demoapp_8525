@@ -5,16 +5,16 @@ module.exports = {
     "inferenceAccelerators": [],
     "containerDefinitions": [
         {
-            "name": "testfeature-8525",
-            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-demoapp-8525-testfeature:latest`,
+            "name": "testfeatures-8525",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-demoapp-8525-testfeatures:latest`,
             "memoryReservation": "300",
             "resourceRequirements": null,
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8013",
+                    "containerPort": "8015",
                     "protocol": "tcp",
-                    "hostPort": "8013"
+                    "hostPort": "8015"
                 }
             ],
             "environmentFiles": null,

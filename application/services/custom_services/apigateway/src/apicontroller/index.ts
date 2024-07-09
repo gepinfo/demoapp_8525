@@ -5,4 +5,4 @@ export * from "./AdminController";
 export * from "./CamundaController";
 export * from "./systemcredentialmanagerController";
 export * from "./UserController";
-export * from "./testController";
+export * from "./testsController";
